@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <TextView
+        android:id="@+id/textViewD1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="@string/title"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+      	<Button
+   	    android:id="@+id/button1"
+   	    android:layout_width="wrap_content"
+   	    android:layout_height="wrap_content"
+   	    android:layout_alignBaseline="@+id/buttonDelete"
+   	    android:layout_toRightOf="@+id/buttonDelete"
+   	    android:text="Back"
+   	    android:layout_marginLeft="15dp"
+   	    android:onClick="backButton" />
+
+      	<Button
+      	    android:id="@+id/buttonDelete"
+      	    android:layout_width="wrap_content"
+      	    android:layout_height="wrap_content"
+      	    android:layout_alignParentLeft="true"
+      	    android:layout_below="@+id/ed1"
+      	    android:layout_marginTop="129dp"
+      	    android:onClick="deleteButton"
+      	    android:text="Delete" />
+
+      	<EditText
+      	    android:id="@+id/ed1"
+      	    android:layout_width="fill_parent"
+      	    android:layout_height="wrap_content"
+      	    android:layout_alignParentLeft="true"
+      	    android:layout_below="@+id/ed2"
+      	    android:layout_marginTop="30dp"
+      	    android:ems="10"
+      	    android:hint="Book id"
+      	    android:inputType="text" >
+
+      	    <requestFocus />
+      	</EditText>
+
+      	<TextView
+      	    android:id="@+id/textViewD2"
+      	    android:layout_width="wrap_content"
+      	    android:layout_height="wrap_content"
+      	    android:layout_alignParentLeft="true"
+      	    android:layout_below="@+id/textViewD1"
+      	    android:layout_marginTop="14dp"
+      	    android:text="Delete Book"
+      	    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+      	<EditText
+      	    android:id="@+id/ed2"
+      	    android:layout_width="fill_parent"
+      	    android:layout_height="wrap_content"
+      	    android:layout_alignParentLeft="true"
+      	    android:layout_below="@+id/textViewD2"
+      	    android:layout_marginTop="17dp"
+      	    android:ems="10"
+      	    android:hint="Book Name"
+      	    android:inputType="text" />
+
+</RelativeLayout>

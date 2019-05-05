@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="@string/title"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="23dp"
+        android:text="Main Page"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+     <Button
+         android:id="@+id/buttonAddEmp"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_alignRight="@+id/buttonViewAll"
+         android:layout_below="@+id/textView2"
+         android:layout_marginTop="26dp"
+         android:onClick="addbook"
+         android:text="Add Book" />
+
+    <Button
+        android:id="@+id/buttonViewAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonAddEmp"
+        android:layout_marginTop="16dp"
+        android:text="View All Book"
+        android:onClick="viewAll" />
+    
+     <Button
+         android:id="@+id/buttonDelAll"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_alignRight="@+id/buttonViewAll"
+         android:layout_below="@+id/buttonViewAll"
+         android:layout_marginTop="16dp"
+         android:text="Delete Book"
+         android:onClick="deletebook"  />
+     
+      <Button
+          android:id="@+id/buttonExit"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:layout_alignRight="@+id/buttonDelAll"
+          android:layout_below="@+id/buttonDelAll"
+          android:layout_marginTop="16dp"
+          android:onClick="exitApp"
+          android:text="Exit Application" />
+
+      <Button
+          android:id="@+id/button1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignBaseline="@+id/textView2"
+          android:layout_alignBottom="@+id/textView2"
+          android:layout_toRightOf="@+id/textView1"
+          android:onClick="logout"
+          android:text="LogOut" />
+     
+</RelativeLayout>

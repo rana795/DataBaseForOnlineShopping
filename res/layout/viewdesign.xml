@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/imageViewRowDesign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/bookauthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageViewRowDesign"
+        android:layout_marginLeft="55dp"
+        android:layout_toRightOf="@+id/bookname"
+        android:text="Author Name" />
+
+    <TextView
+        android:id="@+id/bookname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageViewRowDesign"
+        android:layout_alignLeft="@+id/bookid"
+        android:text="Book name" />
+
+    <TextView
+        android:id="@+id/bookid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bookname"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/imageViewRowDesign"
+        android:text="Book id" />
+
+</RelativeLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+   		<TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/title"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+   		<TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/textView1"
+        android:text="Add Book Details"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    	<EditText
+        android:id="@+id/editTextbookid"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="10dp"
+        android:hint="Book id"
+        
+        android:ems="10" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/editTextDesignation" >
+           		
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/editTextbookyear"
+            android:layout_weight="1"
+            android:onClick="updateSaveButton"
+            android:text="Save" />
+
+        <EditText
+            android:id="@+id/editTextbookname"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/editTextauthorname"
+            android:ems="10"
+            android:hint="Book Name" />
+
+        <EditText
+            android:id="@+id/editTextbookyear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/editTextbookname"
+            android:ems="10"
+            android:hint="Book year" />
+
+        <EditText
+            android:id="@+id/editTextpublishername"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/editTextbookid"
+            android:ems="10"
+            android:hint="Publisher Name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editTextbookprice"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/editTextpublishername"
+            android:ems="10"
+            android:hint="Book price"
+            android:inputType="textPersonName" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/editTextauthorname"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/editTextbookprice"
+            android:ems="10"
+            android:hint="Author Name"
+            android:inputType="textEmailAddress" />
+
+        <Button
+            android:id="@+id/buttonCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/buttonSave"
+            android:layout_marginTop="23dp"
+            android:layout_weight="1"
+            android:onClick="cancelButton"
+            android:text="Cancel" />
+	    
+</RelativeLayout>
